@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="img/ChatGPT Image Apr 9, 2025, 02_22_52 PM.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trading & Cinta | Portofolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Trading & Cinta</h1>
+      <p>Sebuah portofolio dari hati dan ekonomi</p>
+    </header>
+
+    <div class="toggle-mode">
+      <button onclick="toggleDarkMode()">🌙/☀️ Mode</button>
+    </div>
+
+    <nav>
+      <a href="#kisah">Kisah Cinta</a>
+      <a href="#grafik">Grafik</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#kontak">Kontak</a>
+      <a href="#curhat">Curhat</a>
+    </nav>
+
+    <div class="container">
+      <div class="profile">
+        <img src="img/ChatGPT Image 4 Apr 2025, 17.52.27.png" alt="Foto Profil" />
+        <h3>
+          Kurnia Deni
+          <span class="verified-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M22.5 12c0 1.05-.262 2.04-.726 2.91l1.287 3.9-4.164-.204a8.965 8.965 0 0 1-2.59 1.68l-.786 4.134-3.52-2.634a8.962 8.962 0 0 1-2.91 0L6.49 23.42l-.786-4.134a8.965 8.965 0 0 1-2.59-1.68l-4.165.204 1.288-3.9A8.962 8.962 0 0 1 1.5 12c0-1.05.262-2.04.726-2.91L.939 5.19l4.165.204a8.965 8.965 0 0 1 2.59-1.68L9.48.58l3.52 2.634a8.962 8.962 0 0 1 2.91 0l3.52-2.634.786 4.134a8.965 8.965 0 0 1 2.59 1.68l4.165-.204-1.288 3.9c.464.87.726 1.86.726 2.91zM10.5 15.5l7.5-7.5-1.5-1.5-6 6-3-3-1.5 1.5 4.5 4.5z"
+              />
+            </svg>
+          </span>
+        </h3>
+        <p>
+          Pemuda santai, ngoding sambil cinta-cintaan & mikirin ekonomi 📉❤️
+        </p>
+      </div>
+
+      <div class="card quote">
+        "Yang aku cintai menjauh, sahamku turun, rupiah melemah, HP rusak...
+        Tapi semangatku? Masih belum delisting."
+      </div>
+
+      <div id="kisah" class="card">
+        <h2>💔 Kisah Cinta</h2>
+        <p>
+          Dulu aku suka sama seseorang. Tapi bukan karena dia sempurna. Aku suka
+          karena dia bisa bikin aku ngerasa cukup, walaupun aku nggak punya
+          apa-apa...
+        </p>
+        <p>
+          Sekarang dia udah jauh, tapi perasaan itu masih nyisa sedikit—
+          kayak bayangan waktu matahari terbenam: redup, tapi indah.
+        </p>
+      </div>
+
+      <div id="grafik" class="card">
+        <h2>📈 Grafik IHSG</h2>
+        <canvas id="ihsgChart"></canvas>
+      </div>
+
+      <div class="card">
+        <h2>💵 Grafik IDR/USD</h2>
+        <canvas id="idrChart"></canvas>
+      </div>
+
+      <div id="tentang" class="card">
+        <h2>🧠 Tentang Gue</h2>
+        <p>
+          Seorang pemuda yang suka ngoding, mikirin masa depan, dan kadang
+          mikirin dia yang sekarang udah asing...
+        </p>
+      </div>
+
+      <div id="kontak" class="card">
+        <h2>📬 Kontak</h2>
+        <p>
+          Kirim pesan:
+          <a href="mailto:emailkamu@gmail.com">emailkamu@gmail.com</a>
+        </p>
+        <p>
+          IG:
+          <a href="https://instagram.com/denidev.co.id" target="_blank"
+            >@Denii_Aja</a
+          >
+          | GitHub:
+          <a href="https://github.com/kamu" target="_blank">github.com/kamu</a>
+        </p>
+      </div>
+
+      <div id="curhat" class="card">
+        <h2>📝 Curhatin Aja!</h2>
+        <form name="submit-to-google-sheet">
+          <label for="nama">Nama (optional)</label><br />
+          <input type="text" name="nama" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 6px; border: 1px solid #ccc;" /><br />
+          <label for="pesan">Isi Curhatan</label><br />
+          <textarea name="pesan" rows="5" required style="width: 100%; padding: 8px; border-radius: 6px; border: 1px solid #ccc;"></textarea><br />
+          <button type="submit" style="margin-top: 10px; background-color: var(--primary); color: white; border: none; padding: 10px 16px; border-radius: 6px; cursor: pointer;">
+            Kirim
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal Pop-up -->
+    <div id="popupNotif"><p id="popupMessage"></p></div>
+    <div id="popupOverlay"></div>
+
+    <footer>&copy; 2025 Curhatin Aja by Denzz</footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
